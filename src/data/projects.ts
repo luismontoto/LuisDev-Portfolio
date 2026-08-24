@@ -12,6 +12,24 @@ export interface Project {
 
 export const projects: Project[] = [
 	{
+		id: 'psychology-website',
+		title: 'Website for Psychology Practice',
+		description:
+			'Building a custom website for a psychology practice, including service presentation, a contact form, and a design focused on accessibility and approachability for clients.',
+		tags: ['React', 'Next.js', 'Client Project'],
+		status: 'In Progress',
+		year: 2026,
+	},
+	{
+		id: 'pomodoro-timer',
+		title: 'Pomodoro Timer',
+		description:
+			'Real-time productivity timer implementing the Pomodoro technique, developed for Lean Mind using Test-Driven Development, with task tracking and pomodoro-per-task counters. Timer state is managed server-side and synced live to the client via WebSockets, ensuring accuracy across tab switches and reconnects. Includes browser notifications and generated audio alerts (Web Audio API) on session completion.',
+		tags: ['Node.js', 'Express', 'Socket.io', 'TDD'],
+		status: 'Live',
+		year: 2026,
+	},
+	{
 		id: 'wh40k-analyzer',
 		title: 'WH40k Tournament Analyzer',
 		description:
@@ -31,7 +49,7 @@ export const projects: Project[] = [
 		id: 'luisdev-portfolio',
 		title: 'LuisDev Portfolio',
 		description:
-			'Personal portfolio website built with Astro and Tailwind CSS. Fast, minimal, and designed to showcase projects and skills.',
+			'Designed and deployed a personal portfolio site to showcase projects, skills, and background, optimized for performance.',
 		tags: ['Astro', 'Tailwind CSS', 'TypeScript', 'Portfolio'],
 		status: 'Live',
 		link: '/',

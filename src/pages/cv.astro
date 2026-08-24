@@ -59,7 +59,14 @@ import { cv } from '../data/cv';
 								<div class="absolute left-[-23px] top-5 bottom-[-32px] w-[2px] bg-[var(--color-border)]"></div>
 								<h3 class="text-lg font-medium text-white">{exp.role}</h3>
 								<p class="text-[var(--color-accent-light)] text-sm mb-2">{exp.company} &middot; {exp.period}</p>
-								<p class="text-gray-400 text-sm leading-relaxed mb-3">{exp.description}</p>
+								<ul class="space-y-2 mb-3">
+								{exp.highlights.map((h) => (
+									<li class="text-gray-400 text-sm leading-relaxed flex gap-2">
+										<span class="text-[var(--color-accent)] mt-1.5 shrink-0">•</span>
+										<span>{h}</span>
+									</li>
+								))}
+							</ul>
 								<div class="flex flex-wrap gap-2">
 									{exp.technologies.map((tech) => (
 										<span class="px-2 py-0.5 text-xs font-mono text-gray-500 bg-[var(--color-surface)] border border-[var(--color-border)] rounded">
