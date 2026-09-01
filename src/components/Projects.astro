@@ -14,7 +14,7 @@ import { projects } from '../data/projects';
 				<article class="group p-6 md:p-8 rounded-xl bg-[var(--color-surface)] border border-[var(--color-border)] hover:border-[var(--color-accent)]/30 transition-all duration-300 hover:shadow-lg hover:shadow-[var(--color-accent)]/5">
 					<div class="flex items-start justify-between mb-4">
 						<div>
-							<h3 class="text-xl font-semibold text-white group-hover:text-[var(--color-accent-light)] transition-colors duration-200">
+							<h3 class="glitch-title text-xl font-semibold text-white" data-text={project.title}>
 								{project.title}
 							</h3>
 							<div class="flex items-center gap-3 mt-1">
@@ -80,3 +80,120 @@ import { projects } from '../data/projects';
 		</div>
 	</div>
 </section>
+
+<style>
+	.glitch-title {
+		position: relative;
+		display: inline-block;
+	}
+
+	.glitch-title::before,
+	.glitch-title::after {
+		content: attr(data-text);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+	}
+
+	.glitch-title::before {
+		color: #0ff;
+		z-index: -1;
+	}
+
+	.glitch-title::after {
+		color: #f0f;
+		z-index: -2;
+	}
+
+	.group:hover .glitch-title::before {
+		opacity: 0.8;
+		animation: glitch-1 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	}
+
+	.group:hover .glitch-title::after {
+		opacity: 0.8;
+		animation: glitch-2 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	}
+
+	@keyframes glitch-1 {
+		0% {
+			clip-path: inset(20% 0 60% 0);
+			transform: translate(-3px, 2px);
+		}
+		20% {
+			clip-path: inset(60% 0 10% 0);
+			transform: translate(3px, -2px);
+		}
+		40% {
+			clip-path: inset(40% 0 30% 0);
+			transform: translate(-2px, 1px);
+		}
+		60% {
+			clip-path: inset(10% 0 70% 0);
+			transform: translate(2px, -1px);
+		}
+		80% {
+			clip-path: inset(70% 0 5% 0);
+			transform: translate(-1px, 2px);
+		}
+		100% {
+			clip-path: inset(0 0 100% 0);
+			transform: translate(0);
+		}
+	}
+
+	@keyframes glitch-2 {
+		0% {
+			clip-path: inset(60% 0 20% 0);
+			transform: translate(3px, -2px);
+		}
+		20% {
+			clip-path: inset(10% 0 60% 0);
+			transform: translate(-3px, 2px);
+		}
+		40% {
+			clip-path: inset(30% 0 40% 0);
+			transform: translate(2px, -1px);
+		}
+		60% {
+			clip-path: inset(70% 0 10% 0);
+			transform: translate(-2px, 1px);
+		}
+		80% {
+			clip-path: inset(5% 0 70% 0);
+			transform: translate(1px, -2px);
+		}
+		100% {
+			clip-path: inset(100% 0 0 0);
+			transform: translate(0);
+		}
+	}
+
+	.group:hover .glitch-title {
+		animation: glitch-skew 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	}
+
+	@keyframes glitch-skew {
+		0% {
+			transform: skew(0deg);
+		}
+		20% {
+			transform: skew(-2deg);
+		}
+		40% {
+			transform: skew(1deg);
+		}
+		60% {
+			transform: skew(-1deg);
+		}
+		80% {
+			transform: skew(0.5deg);
+		}
+		100% {
+			transform: skew(0deg);
+		}
+	}
+</style>
