@@ -179,29 +179,16 @@ No se requieren variables de entorno para el build estático.
 
 ---
 
-## 🎯 Próximas Mejoras
-
-- [ ] Modo claro/oscuro con toggle
-- [ ] Sistema de comentarios en el blog
-- [ ] Newsletter subscription
-- [ ] Analytics (Plausible/Umami)
-- [ ] RSS feed
-- [ ] Sitemap.xml automático
-- [ ] Búsqueda en el blog
-- [ ] Paginación de posts
-
----
-
 ## 📄 Licencia
 
-Este proyecto es de uso personal. Siéntete libre de usarlo como inspiración para tu propio portfolio.
+MIT License - ver archivo [LICENSE](LICENSE) para detalles.
 
 ---
 
 ## 🤝 Contacto
 
 - **Web:** [luismontoto.dev](https://luismontoto.dev)
-- **Email:** luis@example.com (actualizar en `src/data/cv.ts`)
+- **Email:** luisirk.montoto@gmail.com
 - **GitHub:** [github.com/luismontoto](https://github.com/luismontoto)
 
 ---
