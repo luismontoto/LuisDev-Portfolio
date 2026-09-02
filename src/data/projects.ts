@@ -15,9 +15,10 @@ export const projects: Project[] = [
 		id: 'psychology-website',
 		title: 'Website for Psychology Practice',
 		description:
-			'Building a custom website for a psychology practice, including service presentation, a contact form, and a design focused on accessibility and approachability for clients.',
-		tags: ['React', 'Next.js', 'Client Project'],
-		status: 'In Progress',
+			'Custom website for a psychology practice (Ester Benjumea), built with React + Vite and TypeScript. Features include service presentation (individual therapy, couples therapy, online therapy, personal growth), contact form with WhatsApp integration, Doctoralia booking link, and a design focused on accessibility and approachability. Deployed on Vercel.',
+		tags: ['React', 'Vite', 'TypeScript', 'CSS Modules', 'Client Project'],
+		status: 'Live',
+		link: 'https://web-ester-tau.vercel.app/',
 		year: 2026,
 	},
 	{
