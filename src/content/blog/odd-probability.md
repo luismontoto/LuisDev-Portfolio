@@ -1,7 +1,8 @@
---
+---
 title: "OddSmith #1: teaching a die to tell the truth (with TDD)"
-date: 2026-09-22
-tags: [typescript, tdd, testing, vitest, oddsmith]
+description: "Building a probability calculator with TDD, starting from the simplest piece: the probability of beating a threshold on a d6."
+pubDate: 2026-09-22
+tags: ["typescript", "tdd", "testing", "vitest", "oddsmith"]
 ---
 
 I'm rewriting **OddSmith**, an expected-value calculator for chained d6 rolls
