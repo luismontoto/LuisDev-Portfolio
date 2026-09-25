@@ -2,7 +2,7 @@
 title: "OddSmith #2: chaining dice rolls without comparing names"
 description: "Chaining several dice thresholds into a full attack sequence, without comparing step names."
 pubDate: 2026-09-23
-tags: ["typescript", "tdd", "testing", "vitest", "oddsmith"]
+tags: [typescript, tdd, testing, vitest, oddsmith]
 ---
 
 In [the previous entry](/blog/oddsmith-1-probability), I built
